@@ -4,10 +4,10 @@ LABEL maintainer="DL_OT_DevOps@aa.com"
 
 RUN yum -y update && \
     yum install -y sudo \
-    xorg-x11-utils.el6.x86_64 \
-    xorg-x11-xauth.el6.x86_64 \
-    xorg-x11-fonts-Type1.el6.noarch \
-    xorg-x11-apps.el6.x86_64 \
+    xorg-x11-utils \
+    xorg-x11-xauth \
+    xorg-x11-fonts-Type1 \
+    xorg-x11-apps \
     libcurl-devel \
     gcc \
     gcc-c++ \
