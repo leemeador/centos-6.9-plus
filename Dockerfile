@@ -14,6 +14,11 @@ RUN yum -y update && \
     libgcc \
     openssl \
     perl-XML-Simple \
+    perl-Time-HiRes \
+    initscripts \
+    openssh-clients \
+    util-linux-ng \
+    xdg-utils \
     ; yum clean all
     
 RUN localedef -v -c -i en_US -f UTF-8 en_US.UTF-8
