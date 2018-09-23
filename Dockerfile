@@ -9,9 +9,9 @@ RUN yum -y update && \
     xorg-x11-fonts-Type1.el6.noarch \
     xorg-x11-apps.el6.x86_64 \
     libcurl-devel \
-    gcc.el6.x86_64 \
-    gcc-c++.el6.x86_64 \
-    libgcc.el6.x86_64 \
-    openssl.el6_6.4.x86_64 \
-    perl-XML-Simple.el6.noarch \
+    gcc \
+    gcc-c++ \
+    libgcc \
+    openssl \
+    perl-XML-Simple \
     ; yum clean all
