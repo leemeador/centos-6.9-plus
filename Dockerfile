@@ -1,6 +1,6 @@
 FROM centos:centos6.10
 
-LABEL maintainer="DL_OT_DevOps@aa.com"
+LABEL maintainer="lee@leemeador.com"
 
 RUN yum -y update && \
     yum install -y sudo \
@@ -15,3 +15,6 @@ RUN yum -y update && \
     openssl \
     perl-XML-Simple \
     ; yum clean all
+    
+RUN localedef -v -c -i en_US -f UTF-8 en_US.UTF-8
+ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
