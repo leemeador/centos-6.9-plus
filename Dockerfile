@@ -2,6 +2,7 @@ FROM centos:centos6.10
 
 LABEL maintainer="lee@leemeador.com"
 
+RUN locale -a
 RUN yum -y update && \
     yum install -y sudo \
     xorg-x11-utils \
